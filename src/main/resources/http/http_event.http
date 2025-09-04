@@ -1,0 +1,15 @@
+### Lister tous les événements
+GET http://localhost:8080/api/events/dates
+Accept: application/json
+
+### Créer un nouvel événement
+POST http://localhost:8080/api/events
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Mini du 4 Octobre",
+  "duration": 24,
+  "startDate": "2025-10-04T12:00:00",
+  "endDate": "2025-10-05T12:00:00"
+}

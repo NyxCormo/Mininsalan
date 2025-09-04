@@ -1,30 +1,21 @@
-package insalan.mininsalan.entity;
+package insalan.mininsalan.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-@Entity
-public class Event {
-    @Id @GeneratedValue
+public class EventDateDto {
     private Long id;
     private String name;
-    private String description;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
     private int duration;
 
-    @OneToMany(mappedBy = "event")
-    private List<Challenge> challenges;
 }
-
-
