@@ -1,5 +1,7 @@
 package insalan.mininsalan.dto;
 
+import insalan.mininsalan.enums.ChallengeType;
+import insalan.mininsalan.enums.Reward;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,12 +13,14 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EventDateDto {
+public class EventSummaryDto {
     private Long id;
     private String name;
     private String description;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private int duration;
-
+    private int totalChallenges;
+    private int availableChallenges;
+    private boolean isActive;
 }
+
