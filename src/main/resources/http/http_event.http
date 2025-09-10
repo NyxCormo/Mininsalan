@@ -8,8 +8,8 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Mini du 5 Octobre",
+  "name": "Mini test",
   "duration": 24,
-  "startDate": "2025-10-05T12:00:00",
-  "endDate": "2025-10-06T12:00:00"
+  "startDate": "2025-12-30T12:00:00",
+  "endDate": "2026-01-01T12:00:00"
 }

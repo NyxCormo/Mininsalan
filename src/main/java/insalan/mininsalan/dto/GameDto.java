@@ -1,24 +1,17 @@
-package insalan.mininsalan.entity;
+package insalan.mininsalan.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-@Entity
-public class Game {
-    @Id
-    @GeneratedValue
+public class GameDto {
     private Long id;
     private String name;
     private String link;
     private String imagelink;
 }
-

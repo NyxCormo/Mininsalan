@@ -39,8 +39,26 @@ public class CacheConfig {
                 // Medium cache for upcoming events
                 buildCache("upcoming-events", 200, 20, TimeUnit.MINUTES),
 
-                // Short cache for challenge-related data (if you add challenge endpoints later)
+                // Short cache for challenge-related data
                 buildCache("challenges", 500, 10, TimeUnit.MINUTES),
+
+                // Short cache for challenges by event
+                buildCache("challenges-by-event", 200, 10, TimeUnit.MINUTES),
+
+                // Short cache for individual challenge
+                buildCache("challenge", 200, 10, TimeUnit.MINUTES),
+
+                // Medium cache for game data
+                buildCache("games", 500, 20, TimeUnit.MINUTES),
+
+                // Medium cache for individual game
+                buildCache("game", 200, 20, TimeUnit.MINUTES),
+
+                // Medium cache for category data
+                buildCache("categories", 500, 20, TimeUnit.MINUTES),
+
+                // Medium cache for individual category
+                buildCache("category", 200, 20, TimeUnit.MINUTES),
 
                 // Cache for player-related data (if you add player features later)
                 buildCache("players", 300, 15, TimeUnit.MINUTES)

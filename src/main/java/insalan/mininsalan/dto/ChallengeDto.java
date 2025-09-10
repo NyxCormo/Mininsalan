@@ -8,47 +8,34 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Set;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EventDetailsDto {
+public class ChallengeDto {
     private Long id;
-    private EventInfo eventInfo;
-    private List<ChallengeDto> challenges;
+    private String title;
+    private String description;
+    private int points;
+    private ChallengeType type;
+    private Reward reward;
+    private LocalDateTime releaseTime;
+    private LocalDateTime endTime;
+    private GameDto game;
+    private EventDto event;
+    private Set<CategoryDto> categories;
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @Builder
-    public static class EventInfo {
+    public static class EventDto {
+        private Long id;
         private String name;
-        private String description;
         private LocalDateTime startDate;
         private LocalDateTime endDate;
-        private int duration;
-    }
-
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @Builder
-    public static class ChallengeDto {
-        private Long id;
-        private String title;
-        private String description;
-        private int points;
-        private ChallengeType type;
-        private Reward reward;
-        private LocalDateTime releaseTime;
-        private LocalDateTime endTime;
-        private GameDto game;
-        private Set<CategoryDto> categories;
-        private boolean isCompleted;
-        private LocalDateTime completedAt;
     }
 
     @Data

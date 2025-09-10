@@ -1,7 +1,7 @@
 package insalan.mininsalan.enums;
 
 public enum ChallengeType {
-    TEMPORARY,
-    PERMANENT,
-    RACE
+    TEMPORARY, //Durée limitée
+    PERMANENT, //Tout le monde peut finir
+    RACE //Premier à finir
 }

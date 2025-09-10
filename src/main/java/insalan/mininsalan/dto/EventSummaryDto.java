@@ -1,7 +1,5 @@
 package insalan.mininsalan.dto;
 
-import insalan.mininsalan.enums.ChallengeType;
-import insalan.mininsalan.enums.Reward;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -65,6 +65,7 @@ public class DtoMapper {
                 .id(game.getId())
                 .name(game.getName())
                 .link(game.getLink())
+                .imagelink(game.getImagelink())
                 .build();
     }
 
